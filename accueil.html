@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass-Memo - Histoires de vie, liens de cœur</title>
+    <style>
+        :root {
+            --primary-blue: #1E40AF;
+            --light-gray: #CB25E1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        .header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .tagline {
+            text-align: center;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        .choice-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .choice-button {
+            padding: 1.5rem 3rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 250px;
+        }
+
+        .establishment {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .family {
+            background-color: white;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .choice-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .choice-container {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Pass-Memo Logo" class="logo">
+    </header>
+
+    <main class="main-content">
+        <h1 class="tagline">Histoires de vie, liens de cœur</h1>
+        
+        <div class="choice-container">
+            <button class="choice-button establishment">Je suis un établissement</button>
+            <button class="choice-button family">Je suis un proche</button>
+        </div>
+    </main>
+</body>
+</html> 
